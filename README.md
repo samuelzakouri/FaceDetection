@@ -6,7 +6,12 @@ Face Detection using Python &amp; OpenCV
 
 * hat
 * mustache
-* blur faced
+
+## Features
+
+1. Filters
+2. Blur faced
+3. Screenshot
 
 ## Requirements
 
