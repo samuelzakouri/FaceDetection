@@ -4,9 +4,9 @@ Face Detection using Python &amp; OpenCV
 
 ## Filters
 
-* 'hat'
-* 'mustache'
-* 'blur faced'
+* hat
+* mustache
+* blur faced
 
 ## Requirements
 
