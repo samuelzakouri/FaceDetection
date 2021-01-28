@@ -2,16 +2,17 @@
 
 Face Detection using Python &amp; OpenCV
 
-## Filters
-
-* hat
-* mustache
-
 ## Features
 
 1. Filters
 2. Blur faced
 3. Screenshot
+
+## Filters
+
+* hat
+* mustache
+
 
 ## Requirements
 
