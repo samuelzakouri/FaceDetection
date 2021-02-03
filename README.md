@@ -6,7 +6,7 @@ Face Detection using Python &amp; OpenCV
 
 1. Filters
 2. Blur faced
-3. Screenshot
+3. Screenshots
 
 ## Filters
 
