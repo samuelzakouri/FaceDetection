@@ -27,6 +27,10 @@ eyeCascade = cv2.CascadeClassifier(casc_eye_Path)
 mustache_filter = cv2.imread(FILTERS_PATH + 'mustache.jpg')
 hat_filter = cv2.imread(FILTERS_PATH + 'hat.png')
 
+#Size of the screen
+screen_width =1440
+screen_height = 990
+
 #Initialization
 mustache = False
 hat = False
@@ -101,8 +105,13 @@ while True:
                 frame[y:y + color.shape[0], x:x + color.shape[1]] = color
 
         frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
+        name = 'Face Detection'
         # Display the resulting frame
-        cv2.imshow('Face Detection', frame)
+        cv2.namedWindow(name, cv2.WND_PROP_FULLSCREEN)
+        cv2.resizeWindow(name, screen_width, screen_height)
+        cv2.setWindowProperty(name, cv2.WND_PROP_FULLSCREEN,
+                              cv2.WINDOW_FULLSCREEN)
+        cv2.imshow(name, frame)
 
     # waitKey(0) will display the window infinitely until any keypress (it is suitable for image display).
     # waitKey(1) will display a frame for 1 ms, after which display will be automatically closed
